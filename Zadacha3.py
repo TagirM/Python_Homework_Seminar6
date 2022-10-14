@@ -2,5 +2,11 @@
 # первые буквы имен, значения - списки, содержащие имена, начинающиеся с соответствующей буквы.
 
 names = ["Иван", "Мария", "Петр", "Илья", "Марина", "Алина", "Бибочка", "Петр"]
-myNewDict = {j[0]: j for j in names}
-print(myNewDict)
+
+
+def myNewDict(arguments):
+    myDict = {j[0]: j for j in arguments}
+    return myDict
+
+
+print(myNewDict(names))
